@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PEh-dY-RNV" customClass="TableSectionHeader" customModule="ClickTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-wl-45a">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeD-GJ-fNF">
+                            <rect key="frame" x="68" y="27" width="263" height="21"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.95122195509999996" green="0.1701569295" blue="0.1228884765" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEJ-VH-fiu">
+                            <rect key="frame" x="339" y="22.5" width="30" height="30"/>
+                            <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="iVI-pt-qij"/>
+                                <constraint firstAttribute="height" constant="30" id="lmJ-1w-nfM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <size key="titleShadowOffset" width="2" height="0.0"/>
+                            <state key="normal" title="&gt;">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="detailButtonClicked:" destination="PEh-dY-RNV" eventType="touchUpInside" id="3qV-hd-tEk"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I56-wI-fFJ">
+                            <rect key="frame" x="10" y="10" width="50" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="jqT-G2-Fhj"/>
+                                <constraint firstAttribute="height" constant="55" id="qsv-Vb-vDY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="I56-wI-fFJ" firstAttribute="leading" secondItem="DFJ-wl-45a" secondAttribute="leading" constant="10" id="E2s-it-Xln"/>
+                        <constraint firstAttribute="trailing" secondItem="ZEJ-VH-fiu" secondAttribute="trailing" constant="6" id="MET-vF-iva"/>
+                        <constraint firstItem="ZEJ-VH-fiu" firstAttribute="leading" secondItem="DeD-GJ-fNF" secondAttribute="trailing" priority="999" constant="8" id="aer-br-Bk7"/>
+                        <constraint firstItem="DeD-GJ-fNF" firstAttribute="centerY" secondItem="DFJ-wl-45a" secondAttribute="centerY" id="ahY-Mu-i8I"/>
+                        <constraint firstItem="I56-wI-fFJ" firstAttribute="centerY" secondItem="DFJ-wl-45a" secondAttribute="centerY" id="eDF-FC-cFc"/>
+                        <constraint firstItem="ZEJ-VH-fiu" firstAttribute="centerY" secondItem="DFJ-wl-45a" secondAttribute="centerY" id="nqM-4N-Hco"/>
+                        <constraint firstItem="DeD-GJ-fNF" firstAttribute="leading" secondItem="I56-wI-fFJ" secondAttribute="trailing" constant="8" id="vYM-ZE-tRJ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DFJ-wl-45a" secondAttribute="trailing" id="Ehk-fc-y4r"/>
+                <constraint firstItem="DFJ-wl-45a" firstAttribute="top" secondItem="PEh-dY-RNV" secondAttribute="top" id="dsM-TM-vuI"/>
+                <constraint firstItem="DFJ-wl-45a" firstAttribute="leading" secondItem="PEh-dY-RNV" secondAttribute="leading" id="rUY-B7-aMR"/>
+                <constraint firstAttribute="bottom" secondItem="DFJ-wl-45a" secondAttribute="bottom" id="z1B-1D-Tn2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailButton" destination="ZEJ-VH-fiu" id="IM2-Hr-fJX"/>
+                <outlet property="mImageView" destination="I56-wI-fFJ" id="jUE-h6-7vR"/>
+                <outlet property="titleLabel" destination="DeD-GJ-fNF" id="RdV-yN-Ijn"/>
+            </connections>
+            <point key="canvasLocation" x="-258.5" y="-512.5"/>
+        </view>
+    </objects>
+</document>
