@@ -11,6 +11,7 @@ import UIKit
 import CoreData
 import Firebase
 
+//Appdelegate instance
 var APP_DEL = UIApplication.shared.delegate as! AppDelegate
 
 @UIApplicationMain
